@@ -5,6 +5,11 @@
       <HeaderBanner />
       <NavbarBottom />
     </div>
+    <section>
+      <SectionMeetExoapp />
+      <SectionEcommerceExoapp />
+      <SectionDeliveryExoapp />
+    </section>
   </div>
 </template>
 
@@ -12,9 +17,19 @@
 import NavbarTop from "@/components/NavbarTop";
 import NavbarBottom from "@/components/NavbarBottom";
 import HeaderBanner from "@/components/HeaderBanner";
+import SectionMeetExoapp from "@/components/content/SectionMeetExoapp";
+import SectionEcommerceExoapp from "@/components/content/SectionEcommerceExoapp";
+import SectionDeliveryExoapp from "@/components/content/SectionDeliveryExoapp";
 
 export default {
   name: "App",
-  components: { NavbarTop, NavbarBottom, HeaderBanner },
+  components: {
+    NavbarTop,
+    NavbarBottom,
+    HeaderBanner,
+    SectionMeetExoapp,
+    SectionEcommerceExoapp,
+    SectionDeliveryExoapp,
+  },
 };
 </script>
