@@ -1,7 +1,7 @@
 <template>
   <!-- Wrapper -->
   <div
-    class="nav-transition w-auto bottom-0 left-0 right-0 fixed border-t bg-gray-900 border-gray-400 lg:hidden z-10"
+    class="nav-transition w-auto bottom-0 left-0 right-0 fixed border-t bg-gray-900 border-gray-700 lg:hidden z-10"
   >
     <!-- Wrapper Div button  -->
     <div class="mx-auto lg:mx-4 py-3 px-2 md:mx-6 md:py-5 flex justify-between">
@@ -39,7 +39,7 @@
         >
           <div class="flex flex-col md:flex-row items-center">
             <svg
-            class="w-8 h-8"
+              class="w-8 h-8"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
