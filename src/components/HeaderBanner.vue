@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col lg:flex-row items-start px-8 py-4">
+  <div class="flex flex-col lg:flex-row items-start px-8 py-4 lg:min-h-screen lg:pt-16">
     <div class="w-full lg:w-1/3 flex flex-col items-center lg:items-start mb-10 lg:mb-0">
       <span class="text-3xl text-gray-300 font-semibold mb-4 text-center lg:text-left"
         >Sell Digital Goods Online
