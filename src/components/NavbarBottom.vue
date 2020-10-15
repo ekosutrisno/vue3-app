@@ -7,7 +7,8 @@
     <div class="mx-auto lg:mx-4 py-3 px-2 md:mx-6 md:py-5 flex justify-between">
       <!-- Wrapper Buttonn -->
       <div class="flex flex-col md:flex-row items-center justify-around">
-        <button
+        <router-link
+          to="/"
           class="text-gray-300 hover:text-green-500 focus:outline-none hover:no-underline transition-colors duration-300 ease-linear"
         >
           <div class="flex flex-col md:flex-row items-center">
@@ -29,12 +30,13 @@
               Home
             </span>
           </div>
-        </button>
+        </router-link>
 
         <!-- End Wrapper Button  -->
       </div>
       <div class="flex flex-col md:flex-row items-center justify-around">
-        <button
+        <router-link
+          to="/product"
           class="text-gray-300 hover:text-green-500 focus:outline-none hover:no-underline transition-colors duration-300 ease-linear"
         >
           <div class="flex flex-col md:flex-row items-center">
@@ -56,12 +58,13 @@
               Product
             </span>
           </div>
-        </button>
+        </router-link>
 
         <!-- End Wrapper Button  -->
       </div>
       <div class="flex flex-col md:flex-row items-center justify-around">
-        <button
+        <router-link
+          to="/developer"
           class="text-gray-300 hover:text-green-500 focus:outline-none hover:no-underline transition-colors duration-300 ease-linear"
         >
           <div class="flex flex-col md:flex-row items-center">
@@ -83,12 +86,13 @@
               Developers
             </span>
           </div>
-        </button>
+        </router-link>
 
         <!-- End Wrapper Button  -->
       </div>
       <div class="flex flex-col md:flex-row items-center justify-around">
-        <button
+        <router-link
+          to="/resource"
           class="text-gray-300 hover:text-green-500 focus:outline-none hover:no-underline transition-colors duration-300 ease-linear"
         >
           <div class="flex flex-col md:flex-row items-center">
@@ -110,12 +114,13 @@
               Resources
             </span>
           </div>
-        </button>
+        </router-link>
 
         <!-- End Wrapper Button  -->
       </div>
       <div class="flex flex-col md:flex-row items-center justify-around">
-        <button
+        <router-link
+          to="/pricing"
           class="text-gray-300 hover:text-green-500 focus:outline-none hover:no-underline transition-colors duration-300 ease-linear"
         >
           <div class="flex flex-col md:flex-row items-center">
@@ -137,7 +142,7 @@
               Pricing
             </span>
           </div>
-        </button>
+        </router-link>
 
         <!-- End Wrapper Button  -->
       </div>

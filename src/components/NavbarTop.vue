@@ -2,14 +2,15 @@
   <div class="flex items-center justify-between py-4 px-4 lg:px-0 h-full">
     <!-- Links and Logo Brand -->
     <div class="flex items-center justify-start space-x-4">
-      <button class="focus:outline-none">
+      <router-link to="/" class="focus:outline-none">
         <img
-        class="w-32"
-        src="https://shoppy.gg/assets/img/logo.3a9ebb7.svg"
-        alt="logo-brand"
-      />
-      </button>
-      <button
+          class="w-32"
+          src="https://shoppy.gg/assets/img/logo.3a9ebb7.svg"
+          alt="logo-brand"
+        />
+      </router-link>
+      <router-link
+        :to="link.to"
         v-for="link in links"
         :key="link.id"
         class="nav-transition hidden lg:flex items-center text-lg space-x-3 py-0 px-4 font-medium text-gray-300 border-none outline-none focus:outline-none hover:text-gray-400"
@@ -30,12 +31,15 @@
             d="M19 9l-7 7-7-7"
           />
         </svg>
-      </button>
+      </router-link>
     </div>
 
     <div class="">
-      <button class="lg:hidden text-gray-300 hover:text-gray-400 focus:outline-none">
-        <svg class="w-8 h-8"
+      <button
+        class="lg:hidden text-gray-300 hover:text-gray-400 focus:outline-none"
+      >
+        <svg
+          class="w-8 h-8"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -52,16 +56,18 @@
       <div
         class="nav-transition hidden lg:flex items-center justify-between space-x-4"
       >
-        <button
+        <router-link
+          to="/sigin"
           class="py-2 px-6 rounded-lg font-medium text-gray-300 bg-transparent hover:bg-gray-800 border focus:outline-none transition-colors duration-200 ease-in-out"
         >
           Sign In
-        </button>
-        <button
+        </router-link>
+        <router-link
+          to="/signup"
           class="py-2 px-6 rounded-lg font-medium text-gray-300 bg-green-600 hover:bg-green-500 focus:outline-none transition-colors duration-200 ease-in-out"
         >
           Sign Up
-        </button>
+        </router-link>
       </div>
     </div>
   </div>
@@ -75,24 +81,28 @@ export default {
       links: [
         {
           id: 1,
+          to: "/product",
           label: "Product",
           icon: true,
           isActive: false,
         },
         {
           id: 2,
-          label: "Developers",
+          to: "/developer",
+          label: "Developer",
           icon: true,
           isActive: false,
         },
         {
           id: 3,
+          to: "/resource",
           label: "Resources",
           icon: true,
           isActive: false,
         },
         {
           id: 4,
+          to: "/pricing",
           label: "Pricing",
           icon: false,
           isActive: false,
